@@ -145,6 +145,7 @@ enum {
 #endif /* #else #if defined(CONFIG_HOTPLUG_CPU) || !defined(MODULE) */
 
 #ifdef CONFIG_HOTPLUG_CPU
+
 extern int register_cpu_notifier(struct notifier_block *nb);
 extern int __register_cpu_notifier(struct notifier_block *nb);
 extern void unregister_cpu_notifier(struct notifier_block *nb);
